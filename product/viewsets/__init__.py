@@ -1,4 +1,5 @@
-from .product_viewset import ProductViewSet
-from .category_viewset import CategoryViewSet
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
-__all__ = ["CategoryViewSet", "ProductViewSet"]
+from .category_viewset import CategoryViewSet
+from .product_viewset import ProductViewSet
