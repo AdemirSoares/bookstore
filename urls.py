@@ -19,5 +19,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("api/v1/", include('order.urls')),
+    path("api/v1/", include('order.urls')),  # aqui fica api/v1/orders/
 ]
