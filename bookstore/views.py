@@ -8,12 +8,12 @@ import git
 @csrf_exempt
 def update(request):
     if request.method == "POST":
-        '''
+        """
         pass the path of the diectory where your project will be
         stored on PythonAnywhere in the git.Repo() as parameter.
         Here the name of my directory is "test.pythonanywhere.com"
-        '''
-        repo = git.Repo('/home/ademirsoares/bookstore')
+        """
+        repo = git.Repo("/home/ademirsoares/bookstore")
         origin = repo.remotes.origin
 
         origin.pull()
@@ -23,5 +23,5 @@ def update(request):
 
 
 def hello_world(request):
-  template = loader.get_template('hello_world.html')
-  return HttpResponse(template.render())
+    template = loader.get_template("hello_world.html")
+    return HttpResponse(template.render())
