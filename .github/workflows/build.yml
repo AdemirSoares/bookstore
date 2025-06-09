@@ -36,3 +36,4 @@ jobs:
     - name: Test
       run: |
         poetry run python manage.py test order.tests
+        poetry run python manage.py test product.tests
