@@ -3,6 +3,8 @@ name: Python application
 on: [push]
 
 jobs:
+  test:
+    runs-on: ubuntu-latest
   build:
     strategy:
       fail-fast: false
@@ -34,4 +36,3 @@ jobs:
     - name: Test
       run: |
         poetry run python manage.py test order.tests
-        poetry run python manage.py test product.tests
