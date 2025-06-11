@@ -61,7 +61,6 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "debug_toolbar.middleware.DebugToolbarMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
-    "whitenoise.middleware.whiteNoiseMiddleware",
 ]
 
 ROOT_URLCONF = "bookstore.urls"
