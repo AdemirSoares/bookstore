@@ -35,7 +35,9 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
         # deps for installing poetry
         curl \
         # deps for building python deps
-        build-essential
+        build-essential \
+        # GIT necessário para GitPython funcionar
+        git
 
 # install poetry - respects $POETRY_VERSION & $POETRY_HOME
 RUN curl -sSL https://install.python-poetry.org | POETRY_VERSION=1.7.1 python3 -
